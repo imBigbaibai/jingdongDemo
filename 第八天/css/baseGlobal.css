@@ -1,1 +1,28 @@
+/* author ： CR7-wb */
 
+/* 一些公共的样式，比如 左浮动、有浮动、版心等等 */
+
+
+/* 版心 */
+.w {
+	width: 1190px;
+	margin: auto;
+}
+.fr {
+	float: right;
+}
+.fl {
+	float: left;
+}
+
+/* 京东 顶部 开始 */
+.J_event {
+	background-color: #000;
+}
+.J_event a {
+	display: block;
+	height: 80px;
+	background: url('../images/header.jpg') no-repeat;
+}
+
+/* 京东 顶部 结束 */
