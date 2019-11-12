@@ -14,7 +14,13 @@
 .fl {
 	float: left;
 }
-
+li {
+	list-style: none;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
 /* 京东 顶部 开始 */
 .J_event {
 	background-color: #000;
@@ -23,6 +29,50 @@
 	display: block;
 	height: 80px;
 	background: url('../images/header.jpg') no-repeat;
+	position: relative;
+}
+.J_event a i {
+	font-family: icomoon;
+	font-style: normal;
+	width: 20px;
+	height: 20px;
+	color: #fff;
+	position: absolute;
+	top: 5px;
+	right: 0;
+	text-align: center;
+	line-height: 20px;
+	background: rgba(255, 204, 139, 0.5);
 }
 
+@font-face {
+ 	font-family: 'icomoon';
+ 	src:  url('../fonts/icomoon.eot?7kkyc2');
+ 	src:  url('../fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+ 	  url('../fonts/icomoon.ttf?7kkyc2') format('truetype'),
+ 	  url('../fonts/icomoon.woff?7kkyc2') format('woff'),
+ 	  url('../fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+ 	font-weight: normal;
+ 	font-style: normal;
+}
 /* 京东 顶部 结束 */
+
+/* 快捷导航栏 */
+.shortcut {
+	height: 30px;
+	background-color: #E3E4E5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
