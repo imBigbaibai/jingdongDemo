@@ -25,6 +25,9 @@ ul {
 	margin: 0;
 	padding: 0;
 }
+body {
+	background-color: #F6F6F6;
+}
 /* 京东 顶部 开始 */
 .J_event {
 	background-color: #000;
@@ -66,7 +69,7 @@ ul {
 	height: 30px;
 	line-height: 30px;
 	background-color: #E3E4E5;
-	border: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
 	font-size: 12px;
 	color: #9D9D9D;
 }
@@ -129,7 +132,32 @@ ul {
 .inner {
 	height: 140px;
 	background-color: pink;
+	position: relative;
 }
+.logo{
+	width: 190px;
+	height: 171px;
+	position: absolute;
+	background-color: #fff;
+	margin-top: -31px;
+	box-shadow: 0 -12px 10px rgba(0, 0, 0, 0.2);
+}
+.logo h1 {
+	/* h 标签带margin上下，我们不需要 */
+	margin: 0;
+}
+.logo a {
+	display: block;
+	width: 190px;
+	height: 170px;
+	background: url('../images/logo.png') no-repeat;
+	/* 不显示a 里的字，但是我们不要删除掉，用户搜索会比较重要 
+	   我们用首行缩进，把字移除标签范围，然后再隐藏掉
+	*/
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
 
 
 
