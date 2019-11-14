@@ -18,6 +18,11 @@
 	/* 京东主色调 */
 	color: #f10215!important;
 }
+/* 去掉input的内边距 */
+input , button {
+	padding: 0;
+	margin: 0;
+}
 li {
 	list-style: none;
 }
@@ -157,7 +162,54 @@ body {
 	text-indent: -9999px;
 	overflow: hidden;
 }
+.search {
+	width: 550px;
+	height: 35px;
+	background-color: purple;
+	position: absolute;
+	top: 25px;
+	left: 320px;
+}
+/* 行内块 元素之间会有缝隙， 用浮动可以解决 */
+.search input {
+	width: 493px;
+	height: 33px;
+	border: 1px solid #f10215;
+	padding-left: 5px;
+	color: #909090;
+	outline: none; /* 取消选中后的外边框 */
+	float: left;
+}
+/* button 有默认的外边框  border */
+.search button {
+	width: 50px;
+	height: 35px;
+	background-color: #f10215;
+	border: 0;
+	float: left;
+	outline: none;
+	cursor: pointer;
 
+}
+/* html 里有 i 标签了，方便我们书写，我们给相机用 em 标签 */
+.search i {
+	font-family: "icomoon";
+	color: #fff;
+	font-style: normal;
+}
+.search em {
+	position: absolute;
+	width: 19px;
+	height: 15px;
+	background-color: purple;
+	top: 10px;
+	right: 65px;
+	background: url('../images/sprite-search.png') no-repeat;
+	cursor: pointer;
+}
+.search em:hover {
+	background-position: -30px 0;
+}
 
 
 
