@@ -410,4 +410,65 @@ body {
 	padding-top: 5px;
 }
 
+.copyright {
+	height: 230px;
+	border-top: 1px solid #dedede;
+}
+.links {
+	text-align: center;
+	padding-top: 10px;
+}
+.links a {
+	color: #666666;
+	font-size: 12px;
 
+}
+.links a:hover {
+	color: #f10215;
+}
+.links span {
+	color: #cccccc;
+	font-size: 12px;
+	margin: 0 5px;
+}
+
+.c-info {
+	text-align: center;
+	margin-top: 15px;
+
+}
+.info-message {
+	width: 1000px;
+	margin: 0 auto;
+}
+.c-info p {
+	font-size: 12px;
+	line-height: 23px;
+	color: #999;
+}
+.tupian {
+	margin-top: 15px;
+	text-align: center;
+}
+.tupian a {
+	display: inline-block;
+	width: 103px;
+	height: 32px;
+	margin: 0 2px;
+	background:url(../images/ico_footer.png) no-repeat 0 -151px;
+}
+.tupian .wangjing {
+	background-position: 0 -184px;
+}
+.tupian .jubao{
+	background-position: 0 -217px;
+}
+.tupian .kexin{
+	background-position: -103px -151px;
+}
+.tupian .chengxin{
+	background-position: -103px -184px;
+}
+.tupian .app{
+	background-position: -103px -217px;
+}
