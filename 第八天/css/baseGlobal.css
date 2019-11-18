@@ -18,10 +18,33 @@
 	/* 京东主色调 */
 	color: #f10215!important;
 }
+.clearfix:before,.clearfix:after { 
+  content:"";
+  display:table;  /* 这句话可以出发BFC BFC可以清除浮动,BFC我们后面讲 */
+}
+.clearfix:after {
+ clear:both;
+}
+.clearfix {
+  *zoom:1;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+h5 , p{
+	margin: 0;
+}
 /* 去掉input的内边距 */
 input , button {
 	padding: 0;
 	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+i {
+	font-style: normal;
 }
 li {
 	list-style: none;
@@ -136,7 +159,7 @@ body {
 
 .inner {
 	height: 140px;
-	background-color: pink;
+	/* background-color: pin,k; */
 	position: relative;
 }
 .logo{
@@ -211,9 +234,180 @@ body {
 	background-position: -30px 0;
 }
 
+.hotwords {
+	position: absolute;
+	left: 320px;
+	top: 70px;
+}
+.hotwords a {
+	color: #9d9d9d;
+	font-size: 12px;
+}
+.hotwords a:hover {
+	color: #f10215;
+}
 
+.mycar {
+	width: 168px;
+	height: 33px;
+	position: absolute;
+	background-color: #fff;
+	right: 120px;
+	top: 25px;
+	border: 1px solid #ccc;
+	text-align: center;
+	line-height: 33px;
+}
+.mycar a {
+	color: #f10215;
+	font-size: 12px;
 
+}
+.mycar i {
+	font-family: "icomoon";
+	color: #f10215;
+}
+.mycar s {
+	text-decoration: none;
+	background-color: #f10215;
+	padding: 0 5px;
+	color: #fff;
+	font-size: 12px;
+	position: absolute;
+	height: 16px;
+	/* 行高会继承，要注意 */
+	line-height: 16px;
+	top: 3px;
+	left: 125px;
+	border-radius: 8px;
+}
+.super {
+	position: absolute;
+	right: 0;
+	bottom: 10px;
+}
+.navitems {
+	position: absolute;
+	left: 200px;
+	bottom: 0;
+}
+.navitems ul {
+	float: left;
+}
+.navitems ul li {
+	float: left;
+}
+.navitems li a {
+	color: #555555;
+	font-size: 16px;
+	font-weight: 700;
+	margin-left: 30px;
+	height: 40px;
+	line-height: 40px;
+}
+.navitems li a:hover {
+	color: #f10215;
+}
+/* 增加优先级，这样不影响其他 用到 spacer 的标签 */
+.navitems .spacer {
+	float: left;
+	margin-top: 15px;
 
+	margin-left: 20px;
+	margin-right: -10px;
+}
 
+/* 底部服务 */
+.footer {
+	height: 560px;
+	background-color: #EAEAEA;
+}
+.footer-service {
+	border-bottom: 1px solid #dedede;
+}
+.footer-service-inner {	
+	padding: 30px 0;
+} 
+.footer-service-inner li {
+	float: left;
+	width: 297px;
+	height: 42px;
+}
+.service_unit {
+	width: 225px;
+	height: 42px;
+	margin: 0 auto;
+	position: relative;
+
+}
+.service_unit h5 {
+	height: 42px;
+	width: 36px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url('../images/ico.png') no-repeat;
+	text-indent: -9999px;
+}
+.service_unit p {
+	line-height: 42px;
+	font-size: 18px;
+	font-weight: 700;
+	margin-left: 45px;
+}
+.service_unit .kuai {
+	background-position: 0 -43px;
+}
+.service_unit .hao {
+	background-position: 0 -86px;
+}
+.service_unit .sheng {
+	background-position: 0 -129px;
+}
+.help {
+	height: 180px;
+	padding-top: 20px;
+}
+.help dl {
+	float: left;
+	width: 195px;
+}
+.help dt {
+	color: #666;
+	height: 26px;
+	font-size: 14px;
+	font-weight: 700;
+}
+.help dd a{
+	color: #727272;
+	font-size: 12px;
+	height: 22px;
+}
+.help dd a:hover {
+	color: #f10215;
+}
+.help .cover {
+	float: right;
+	width: 207px;
+	height: 150px;
+	background: url('../images/ico_footer.png') no-repeat;
+}
+.cover dt {
+	text-align: center;
+}
+.cover .info {
+	font-size: 12px;
+	width: 180px;
+	height: 50px;
+	color: #727272;
+	line-height: 20px;
+	margin-left: 15px;
+	margin-top: 5px;
+}
+.cover .more {
+	text-align: right;
+	padding-right: 10px;
+	padding-top: 5px;
+}
 
 
