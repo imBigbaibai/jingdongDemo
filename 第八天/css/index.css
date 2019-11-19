@@ -1,1 +1,23 @@
 /* 京东首页的css */
+.jd {
+	height: 480px;
+	position: relative;
+}
+.jd-inner {
+	height: 480px;
+	background-color: skyblue;
+	position: relative;
+	z-index: 1;
+}
+.ad {
+	height: 480px;
+	background: url('../images/bg.png') no-repeat top center;
+	position: absolute; /* 行内块隐式转换 */
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.ad a {
+	display: block;
+	height: 100%;
+}
