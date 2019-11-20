@@ -5,7 +5,6 @@
 }
 .jd-inner {
 	height: 480px;
-	background-color: skyblue;
 	position: relative;
 	z-index: 1;
 }
@@ -21,3 +20,176 @@
 	display: block;
 	height: 100%;
 }
+.jd-col1 {
+	height: 465px;
+	width: 190px;
+	background-color: #6E6568;
+	float: left;
+	padding-top: 15px;
+}
+.jd-col1 li {
+	height: 28px;
+	line-height: 28px;
+	padding-left: 10px;
+}
+.jd-col1 li:hover {
+	background-color: #ccc;
+}
+.jd-col1 li a{
+	color: #fff;
+	font-size: 14px;
+
+}
+.jd-col1 li a:hover{
+	color: #f10215;
+	
+}
+.jd-col1 li span{
+	color: #fff;
+	font-size: 12px;
+
+}
+
+.jd-col2 {
+	height: 480px;
+	width: 790px;
+	float: left;
+	margin-left: 10px;
+}
+.jd-col2-hd {
+	height: 340px;
+	background-color: pink;
+	margin-bottom: 10px;
+	position: relative;
+}
+.arr-l, .arr-r {
+	position: absolute;
+	width: 30px;
+	height: 60px;
+	background: rgba(0, 0, 0, 0.3);
+	font-family: "icomoon";
+	top: 50%;
+	margin-top: -30px;
+	color: #fff;
+	line-height: 60px;
+	text-align: center;
+	font-size: 26px;
+}
+.arr-l {
+	left: 0;
+}
+.arr-r {
+	right: 0;
+}
+.jd-col2-hd ol {
+	position: absolute;
+	bottom: 15px;
+	left: 50%;
+	margin-left: -90px;
+	width: 180px;
+	height: 20px;
+	background: rgba(255, 255, 255, 0.5);
+	border-radius: 10px;
+	padding: 0 3px;
+
+}
+.jd-col2-hd ol li {
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	float: left;
+	margin: 4px 5px;
+	border-radius: 50%;
+}
+.jd-col2-hd .current {
+	background-color: #f10215;
+}
+.jd-col2-bd div {
+	float: left;
+}
+.firstPic {
+	margin-right: 10px;
+}
+
+
+.jd-col3 {
+	height: 480px;
+	width: 190px;
+	background-color: #fff;
+	float: right ;
+}
+.user {
+	height: 95px;
+	padding: 20px 15px 0;
+}
+.user-info {
+	height: 40px;
+	font-size: 12px;
+	color: #747474;
+	line-height: 20px;
+	padding-left: 52px;
+	position: relative;
+}
+.user-info a {
+	font-size: 12px;
+	color: #747474;
+}
+.user-info a:hover {
+	color: #f10215;
+}
+.userImg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.userImg img {
+	width: 100%;
+	height: auto;
+}
+.user-profit a{
+	display: inline-block;
+	font-size: 12px;
+	width: 70px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	color: #f10215;
+	margin-top: 10px;
+	margin-right: 3px;
+	border: 2px solid #f10215;
+}
+.user-profit a:hover{
+	background-color: #f10215;
+	color: #fff;
+}
+.news {
+	height: 154px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background-color: purple;
+}
+.jd-service {
+	height: 209px;
+	background-color: green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
