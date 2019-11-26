@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		ul li:first-child{
+			color: pink;
+		}
+		ul li:last-child{
+			color: purple;
+		}
+		/* ul li:nth-child(4){
+			background-color: pink;
+		} */
+		/* ul li:nth-child(even){
+			background-color: blue;
+		}
+		ul li:nth-child(odd){
+			background-color: green;
+		} */
+		/* ul li:nth-child(n){
+			background-color: yellow;
+		} */
+		/* ul li:nth-child(2n + 1){
+			background-color: yellow;
+		} */
+		ul li:nth-child(4n+1){ /*  n 是从0开始的，但是 li是从 1开始的 */
+			background-color: yellow;
+		}
+		/* div[class]{
+			background-color: green;
+			color: blue;
+		} */
+		div[class ^= demo] {
+			background-color: pink;
+		}
+		div[class $= test]{
+			background-color: skyblue;
+		}
+		div[class *= test] {
+			background-color: gray;
+		}
+		/*- ^ 以什么什么开头的类，  $ 以什么什么结尾的类  * 只要包含不管在什么位置都可以  -*/
+
+	</style>
+</head>
+<body>
+	<ul>
+		<li>C罗</li>
+		<li>迪马利亚</li>
+		<li>卡卡</li>
+		<li>厄齐尔</li>
+		<li>C罗</li>
+		<li>迪马利亚</li>
+		<li>卡卡</li>
+		<li>厄齐尔</li>
+		<li>C罗</li>
+		<li>迪马利亚</li>
+		<li>卡卡</li>
+		<li>厄齐尔</li>
+	</ul>
+
+
+	<div class="demo">死兆星烬</div>
+	<div>死兆星烬</div>
+	<div>死兆星烬</div>
+	<div class="test">死兆星烬</div>
+	<div>死兆星烬</div>
+	<div class="demo123">死兆星烬</div>
+	<div class="hahatest">死兆星烬</div>
+	<div class="aatestaa">死兆星烬</div>
+
+</body>
+</html>

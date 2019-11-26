@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>伪元素</title>
+	<style>
+
+		@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?4sndf8');
+  src:  url('fonts/icomoon.eot?4sndf8#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?4sndf8') format('truetype'),
+    url('fonts/icomoon.woff?4sndf8') format('woff'),
+    url('fonts/icomoon.svg?4sndf8#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+		p::first-letter{
+			/* color: yellow; */
+			font-size: 50px;
+		}
+		p::first-line {
+			color: yellowgreen;
+		}
+		p::selection{
+			color: greenyellow;
+			background-color: skyblue;
+		}
+		
+
+		/*   ::before ::after 都是行内元素，而且content属性是必须要写的;  */
+		div::before {
+			content: "我们";
+			background-color: greenyellow;
+			color: yellow;
+			width: 100px;
+			height: 100px;
+			/* display: block; */
+			display: inline-block;
+		}
+		div::after {
+			content: "结婚啦！";
+			color: yellow;
+			background-color: red;
+			display: inline-block;
+			height: 100px;
+		}
+		span {
+			font-family: "icomoon";
+		}
+		span::after {
+			content: "\e902"
+		}
+	</style>
+</head>
+<body>
+	<!-- <div>今年</div> -->
+	<p>		本赛季，曼联的处境很艰难，但作为队内身价最高的球星，博格巴却高挂免战牌，到目前为止，博格巴由于脚踝伤病已经缺席了曼联最近的10场比赛，并且复出时间一再推迟。
+
+		如今，西媒爆出猛料，称博格巴其实已经伤愈了，但害怕再次受伤影响转会，博格巴拒绝登场，法国球星的此举让自己和俱乐部的关系变得紧张。
+
+	</p>
+
+	<div>今年</div>
+
+	<span></span>
+</body>
+</html>
